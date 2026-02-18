@@ -25,6 +25,7 @@ dhcp-option=option:router,10.131.18.1
 dhcp-option=option:ntp-server,10.131.18.253
 dhcp-option=6,10.131.18.253
 # Server IP addresses Reservation
+# If you are running a cluster use all three reservations. If not you can comment it out by using #
 dhcp-host=00:04:A5:DD:28:A2,10.131.18.200,SAS01
 dhcp-host=00:04:A5:DC:28:BE,10.131.18.201,SAS02
 dhcp-host=00:04:A5:DE:28:06,10.131.18.202,SAS03
@@ -112,5 +113,6 @@ restrict ::1
 _______________________________________________________________________________________________________________
 
 Also make sure to delete or add a hash for tos minclock 4 minsane 3, otherwise NTP will not work.
+
 
 
